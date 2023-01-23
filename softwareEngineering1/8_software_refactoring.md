@@ -1,6 +1,6 @@
 # Software Refactoring
 
-* There are 3 types of changes
+* There are 4 types of changes
     * `Corrective Changes`: Bug Fixes
     * `Perfective Changes`: Adding Features
     * `Adaptive Changes`: Changing the code to make it run in a different environment
