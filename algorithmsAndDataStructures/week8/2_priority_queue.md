@@ -1,6 +1,6 @@
 # Priority Queue
 
-* A queue that hsa some priority associated with the element.
+* A queue that has some priority associated with the element.
 * The element with the `highest` priority is exited first.
 
 ## Implementing using a Max Binary Heap
