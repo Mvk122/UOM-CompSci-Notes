@@ -16,7 +16,7 @@
 ### Z Axis
 ![](../img/rotation_homogenous_z_axis.png)
 ## Composite Matrices
-* Since all transformations use matrices with the same dimensions, composite transformations where all the matrices to perform the transformtion can be done by multiplying all the translations in order and only then multiplying with the coordinates to be transformed.
+* Since all transformations use matrices with the same dimensions, composite transformations where all the matrices to perform the transformation can be done by multiplying all the translations in order and only then multiplying with the coordinates to be transformed.
 * This is helpful for rotation operations as the displacement to origin, rotation and inverse displacement to origin can be combined into 1 matrix transformation.
 
 ## Inverse Matrices
