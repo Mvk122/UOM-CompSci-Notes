@@ -19,3 +19,6 @@
 
 ## Cross Product
 * Returns a Vector that is perpendicular to both vectors that were input.
+* Calculated either with the formula:
+* $\vec{a}\times\vec{b} =|a| * |b|* sin(x) * n$ where x is the angle between the vectors and n is the unit vector at right angles to both a and b.
+* As a vector![[Pasted image 20230221074050.png]]
