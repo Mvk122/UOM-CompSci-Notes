@@ -2,7 +2,7 @@
 ![[Pasted image 20230218120749.png]]
 * When writing to memory, there is no need for the processor to wait for the write operation to complete.
 * Hence write requests can be written to a write buffer that is slowly written to memory.
-* Since read operations require the processor to wait, read operations should be allowed to overake queued writes.
+* Since read operations require the processor to wait, read operations should be allowed to overtake queued writes.
 	* This `out of order execution` can be problematic however, if data is being read while writes to the same data are currently within the write buffer. 
 	* However, it can be resolved by also looking up within the write buffer when doing a read. If the write buffer contains the corresponding memory, the memory operation is cancelled and the value from the write buffer is `forwarded` to the processor.
 * Generally write buffers are a `FIFO` queue.
