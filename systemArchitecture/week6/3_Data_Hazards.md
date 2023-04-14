@@ -12,8 +12,7 @@
 * This is entirely dependant on the compiler being able to find other work to do, otherwise it will insert many No-Operation instructions.
 
 ### Linked Inputs and Outputs (Forwarding)
-
-### Execute Stage Linkage
+#### Execute Stage Linkage
 * Extra hardware can be used to link the output of execute into the input of the execute for the next instruction, allowing the next instruction to use the data from the previous instruction before it is written to the registers.
 * This leads to the control being more complex.
 * This is useful in scenarios such as:
@@ -22,7 +21,7 @@ ADD R1, R2, R3
 MUL R4, R1, R2 // The MUL instruction needs the data in R1 however the first instruction is not in its memory writeback stage when the second instruction is in its execute stage
 ```
 
-### Memory to Execute Stage Linkage
+#### Memory to Execute Stage Linkage
 * The above issue can happen in a different stage when using instructions such as `LDR`. 
 * Subsequent instructions can require data that is in the MEM stage in the previous instruction.
 * Thus another hardware linkage can be created between the memory stage and the inputs of the execute stage.
@@ -31,3 +30,7 @@ MUL R4, R1, R2 // The MUL instruction needs the data in R1 however the first ins
 LDR R1, [R2, R3]
 MUL R0, R1, R1
 ```
+
+### Buffering
+![[Pasted image 20230414052054.png]]
+* Another method is to insert buffers between each stage, storing the result of the previous computation so that the next instruction can be performed without having to wait due to a data dependency.
