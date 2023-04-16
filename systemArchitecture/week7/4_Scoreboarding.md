@@ -2,6 +2,7 @@
 ## Scoreboard
 ![[Pasted image 20230414074038.png]]
 * The `scoreboard` is a centralized hardware mechanism which dynamically constructs the dependency graph for a window of instructions to allow for instructions to be processed as soon as their operands are available and there are no hazard conditions.
+* This allows for out-of-order execution.
 * It has 2 operations that allow for instructions to execute when both operations hold: 
 	* `Issue`: decoding instructions and checking for structural hazards. 
 	* `Read operands`: Wait until there are no data hazards then read the operands.
