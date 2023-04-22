@@ -1,6 +1,7 @@
 # Dijkstra's Algorithm
 #DijkstrasAlgorithm
 * Is used to find the shortest path from a source to a destination with a lower time complexity than  #BellmanFordsAlgorithm
+* Unlike Bellman Ford's however, it cannot be used in a graph with negative weights.
 
 ## Shortest Path with Dijkstra's Algorithm
 1. Maintain a `Priority Queue` and a `List`, starting empty where the elements of both are:
