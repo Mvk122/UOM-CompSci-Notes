@@ -15,6 +15,7 @@
 	5. When the source node is found, follow the predecessor map back to the destination to get the shortest path.
 
 ## Shortest Paths in a Weighted Graph (Bellman Ford)
+#BellmanFordsAlgorithm 
 * Uses the concept of overestimations and refining estimations to get the best path from a source to a destination.
 * The steps are as follows: 
 	1. Create a table with every node and a corresponding `Best Cost From Source` for each node, with a starting value of infinity. (The source city can have a cost of 0)
