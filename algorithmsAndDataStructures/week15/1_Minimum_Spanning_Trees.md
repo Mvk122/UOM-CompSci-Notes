@@ -2,8 +2,8 @@
 #MinimumSpanningTrees 
 ## Definitions 
 * `Minimum Spanning Tree`: A graph where all of the nodes are connected with the sum of the weight of the edges minimised.
-* `Safe Edge`: A safe edge is an edge connecting a minimum spanning tree to another node with the lowest edge weight possible without introducing any cycles.
-* `Light Edge`: An edge crossing a cut where it is the minimum weight of an edge that crosses the cut.
+* `Safe Edge`: A safe edge is an edge connecting a minimum spanning tree to another node with the lowest edge weight possible without introducing any cycles. #safeEdge
+* `Light Edge`: An edge crossing a cut where it is the minimum weight of an edge that crosses the cut. #lightEdge
 
 ## Graph Cuts
 * A cut is a partition in a graph.
