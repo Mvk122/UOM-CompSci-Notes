@@ -1,4 +1,5 @@
 # Prims Minimum Spanning Tree Algorithm
+#PrimsAlgorithm
 * Prim's algorithm is used to create minimum spanning trees, using the concept of a priority queue like #DijkstrasAlgorithm.
 * It uses a greedy approach wherein:
 	1. a node is selected at random to be the root. 
