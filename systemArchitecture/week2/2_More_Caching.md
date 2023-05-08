@@ -30,6 +30,7 @@
 ## Cache Writes
 
 ### Modifying Cache Entry and Memory Copy
+#writeThrough
 * It is slow as writing to the memory is much slower than writing to the cache.
 * Uses more power as signals need to be sent down the cache hierarchy.
 * It is simpler than only modifying the cache as cache eviction thus becomes simpler.
@@ -39,6 +40,7 @@
 * Less common in modern chips than modifying the cache entry only.
 
 ### Modifying Cache Entry Only (Write Back Cache)
+#copyBack
 * Writes only to the cache without writing to memory.
 * Much faster as intermediary writes before cache eviction are not propagated to the memory.
 * Time penalty when the cache is evicted or a context switch occurs.
