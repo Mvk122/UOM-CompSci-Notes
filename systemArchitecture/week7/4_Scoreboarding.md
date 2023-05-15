@@ -1,4 +1,5 @@
 # Out of Order Execution with Scoreboarding
+![[Pasted image 20230515175848.png]]
 ## Scoreboard
 ![[Pasted image 20230414074038.png]]
 * The `scoreboard` is a centralized hardware mechanism which dynamically constructs the dependency graph for a window of instructions to allow for instructions to be processed as soon as their operands are available and there are no hazard conditions.
@@ -20,16 +21,17 @@
 	* `RD`: Read Operands
 	* `EX`: Operate on operands
 	* `WB`: Write results
+* In the drawn table, it contains when the instruction reached each stage by the number of the clock cycle.
 ### Functional Unit Status Table
-* Status if the functional unit that the instruction is in, either: 
+* Status if the functional unit that the instruction is in, in the current clock cycle, storing: 
 	* `Busy`: Whether the unit is being used or not.
 	* `Op`: The operation being performed in the unit
 	* `Fi`: The destination register
 	* `Fj, Fk`: Source register numbers
-	* `Ql, Qk`: The functional units producing the source registers `Fj, Fk`
+	* `Qj, Qk`: The functional units producing the source registers `Fj, Fk`
 	* `Rj, Rk`: Flags indicating when `Fj, Fk` are ready, it is set to yes when each operand is read.
 ### Register Result Status
-* Indicates for each register, which functional unit will write to it.
+* Indicates for each register, which functional unit will write to it. at the current clock cycle.
 
 ## Stages of a Scoreboard Pipeline
 ![[Pasted image 20230414084242.png]]

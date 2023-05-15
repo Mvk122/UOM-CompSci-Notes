@@ -1,8 +1,8 @@
 ## Moore's Law
-* A prediction that the number of components on an intergrated circuit will double every 18 months.
+* A prediction that the number of components on an integrated circuit will double every 18 months.
 * Done usually by reducing the size of components in a chip with the following consequences:
 	* More components per chip as each component is smaller and the chip size can remain constant.
-	* Faster processing either by increased clockspeed or increased parallelism
+	* Faster processing either by increased clock speed or increased parallelism
 	* Lower energy consumption per component as the resistance through each component decreases due to their smaller size.
 
 ## Dennard Scaling

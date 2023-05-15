@@ -1,14 +1,14 @@
 # Interconnection
 
 ## Definitions
-* `Bus`: A logical terminlogy that encompasses the aspects of data transfer between the processors and memory.
+* `Bus`: A logical terminology that encompasses the aspects of data transfer between the processors and memory.
 
-## Communication betweeen Processor and Memory
+## Communication between Processor and Memory
 * `Address`: The processor defining which address data is either to be read or written to.
 * `Data`: The data that is being read or written to the processor from the memory.
 * `Size`: Referring to the size of the data space that should be written to the memory or read into the processor.
 * `Timing/Enable`: Referring to if the data is valid to be read or written eg read-enable or write-enable.
-* `Privilege`: The processor tells the memory the privelege level of the program currently requesting the memory, thus the memory is able to either return the data if the program has the right privileges or return an error.
+* `Privilege`: The processor tells the memory the privilege level of the program currently requesting the memory, thus the memory is able to either return the data if the program has the right privileges or return an error.
 
 ## Interconnection
 ![Busses](../img/bus_types.png)
@@ -32,7 +32,7 @@
 
 ## Computing Architectures
 * `Von Neumann`: Code and data are stored in the same memory and use the same bus. Most mainstream processors use this architecture in the software view, though that can be an abstraction over the actual architecture.
-	* The abstraction is done by having a 'soft partition' in memory separating the code and data so the processor has a harvard interface and the code has a von neumann interface. 
+	* The abstraction is done by having a 'soft partition' in memory separating the code and data so the processor has a Harvard interface and the code has a von Neumann interface. 
 	* This allows for multiple busses and caches to be used for each type of data. This leads to higher performance as instruction and memory fetches can occur at the same time.
 * `Harvard`: Separate address spaces and busses for code and data.
 	* Allows for more engineering flexibility as data and instruction words can be different sizes.
