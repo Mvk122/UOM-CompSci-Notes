@@ -10,3 +10,9 @@
 	* Difficulty to split the stages into uniform size chunks.
 	* A higher probability of hazards occurring and worse penalties when they happen.
 
+## Pipeline Speed-up Calculations
+The time taken for an N-stage pipeline with I instructions and C time per clock cycle is as follows:
+$$
+timetaken = \dfrac{C(I+ N-1)}{N}
+$$
+The N-1 is to account for the last N-1 cycles taken for the last instruction to propagate down the pipeline after issue.
