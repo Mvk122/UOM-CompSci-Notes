@@ -22,8 +22,8 @@
 ## Coordinator Node Selection
 ### Bully Algorithm
 * A node sends an `ELECTION` message to all nodes. Any nodes with a higher number will respond.
-* If none respond before the timeout, then the first node is the highest node and is the coordinator.
-* If a node responds, it then sends out the `ELECTION` message and restarts the process.
+* If none respond before the timeout, then the first node (the node that sent the `ELECTION` message) is the highest node and is the coordinator. It lets other nodes know by sending a `VICTORY` message.
+* If a node or multiple nodes respond, the responders then sends out their own `ELECTION` messages as they have a higher number and restarts the process. The initial node does nothing and waits for a `VICTORY` message.
 
 ## Clock Synchronisation Algorithms
 * As long as some amount of error is acceptable, there are algorithms to get nodes to be nearly synchronised.

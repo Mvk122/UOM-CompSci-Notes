@@ -10,7 +10,7 @@
 * In both protocols, only 1 core can use the bus at any one time.
 ## Update vs Invalidate
 * Invalidate is better in general.
-* Messages are shorted in invalidate as the data does not need to be sent with the address.
+* Messages are shorter in invalidate as the data does not need to be sent with the address.
 * Only 1 message needs to be sent if there are multiple writes to the same word or same cache line. As spatial and temporal locality dictate that there would be many writes on the same location, this savings is significant.
 * This savings is useful as bus bandwidth is a precious commodity.
 * However, invalidate can be slower as it requires a #writeThrough  to the memory on each write. This can however be changed to #copyBack with the use of the `MESI Protocol`.
