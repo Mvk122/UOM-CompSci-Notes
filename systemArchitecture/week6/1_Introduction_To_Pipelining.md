@@ -1,3 +1,4 @@
+#pipeLining
 # Introduction to Pipelining
 ![[Pasted image 20230324062250.png]]
 * The worst case scenario for any instruction has 5 stages, split into the fetch execute cycle:

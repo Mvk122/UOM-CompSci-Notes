@@ -1,3 +1,4 @@
+#pipelineStalls
 # Pipeline Stalls
 * The pipeline for parallel instruction processing can be stalled due to `conflicted instructions` such as:
 	* `Cache Misses`: Creating a long wait before finishing execution.
