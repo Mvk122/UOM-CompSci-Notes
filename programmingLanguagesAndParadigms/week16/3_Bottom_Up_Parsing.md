@@ -1,3 +1,4 @@
+#bottomUpParsing
 # Bottom Up Parsing
 ![[Pasted image 20230519161031.png]]
 * Parsing of a string by starting from the leaves and working towards the root.

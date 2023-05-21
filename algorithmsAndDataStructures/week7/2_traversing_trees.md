@@ -24,6 +24,7 @@ def in_order(T, v):
 ```
 
 ## Post Order Traversal
+#postOrderTraversal
 * Exploring the left, then right then itself.
 ```python
 def post_order(T, v):

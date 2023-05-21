@@ -1,3 +1,4 @@
+#hashTables
 # Hash Maps and Hash Tables
 
 * Hash Maps can be used to efficiently store and look up elements for use in a set or a dictionary.
