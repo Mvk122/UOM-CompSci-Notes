@@ -17,4 +17,3 @@
 	* Image Sharpening
 	* Image Smoothing
 	* Laplacian edge detection
-* 
