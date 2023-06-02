@@ -11,7 +11,7 @@
 		* If 2 or more neighbours, give it any one of the labels but mark down this equivalence.
 	2. Relabel all equivalent labels eg if there is a 3 next to a bunch of 1s, relabel it as 1.
 * Thresholding is used to get the features in the first place, this can however lead to parts of the features being cut out, thus creating additional blobs from disconnected parts of the image. 
-* This can be resolved by using either `dialation` or `erosion` (opening or closing).
+* This can be resolved by using either #dialation or #erosion or by combining them through #opening or #closing [[2_Binary_Morphology]]
 
 ## Blob Boundary Detection
 * Once blobs have been marked, their boundaries can be formed via the following steps:

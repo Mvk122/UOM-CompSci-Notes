@@ -1,5 +1,8 @@
 # File Formats
 * Different file formats are used to store different types of image data.
+* Furthermore files can also store metadata like:
+	* Time taken 
+	* Location
 * Eg a `portable bitmap` only stores pixel values of 1 and 0 hence 8 pixels can be stored in 1 byte, allowing for 8x greater compression.
 
 ## Exposure
@@ -15,3 +18,13 @@
 * Hence when storing GIFs, the image data needs to be stored as well as the palette which represents what colour each unique byte in the image represents.
 ### Transparency
 * Formats like PNG have additional bits for their `alpha` channel which represents the transparency.
+
+## Compression
+### Run Length Encoding (Lossless)
+* Instead of storing a series of pixels with the same value eg 2 2 2 2 2, run length encoding stores the pixel value and the amount of times it repeats eg (2* 5) to save on storage.
+* The image can be perfectly reconstructed hence it is lossless.
+### JPEG (Lossy)
+* Uses a discrete cosine transform to get the frequencies in an image.
+* Higher frequencies are then removed to save the amount of space required to store the image.
+* Then the block is compressed with run-length encoding in a zigzag pattern.
+* This is lossy encoding due to the fact that the higher frequencies can no longer be recovered.
