@@ -1,6 +1,6 @@
 # Linear Programming 
 #linearProgramming
-* Linear programming is an optimisation strategy to minimise or maximise a variable given a set of constraints.
+* Linear programming is an optimization strategy to minimize or maximize a variable given a set of constraints.
 * The constraints have their own constraints: 
 	* They must be expressed as a linear relationship eg $a_1x_1 + a_2x_2$. (No squares or cubes allowed).
 	* The constraints are inequalities. 
@@ -13,7 +13,7 @@
 * Constraints can be represented by their standard form notation on the graph eg x < 5.
 * The possible solutions can be represented by the area under the graph. The example below has the constraints: 
 	* x < 5.
-	* x and y can be changed by they must sum to less than 6.
+	* x and y can be changed but they must sum to less than 6.
 ![[Pasted image 20230425150338.png]]
 * Any solution where both the blue and red apply is a valid solution.
 * The moveable slider shows the summation of x and y to a total value. As it moves up, it intersects with the different points on the graph until the entire line is above the range of feasible solutions. 

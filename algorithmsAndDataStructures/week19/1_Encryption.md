@@ -79,4 +79,7 @@ def multiplicative_inverse(a, b):
 * To encrypt, pick a random integer $k$ that is relatively prime to $p-1$ and send $(a,b)$ where:
 	* $a = g^k\:mod\:p$
 	* $b = My^k\:mod\:p$
-* To decrypt, get the result of $a^x\:mod\:p$,  setting it as $k$ then the decrypted result is `multiplicative_inverse(k, p) * b`
+* To decrypt, 
+	1. Get the result of $a^x\:mod\:p$,  setting it as $k$
+	2. then let $h$ be `multiplicative_inverse(k, p) * b`
+	3. Then the decrypted result is `h mod p`

@@ -20,11 +20,11 @@ $2x_1 + 5x_2 + s_3 = 50$
 
 ## Running the Simplex Algorithm
 * The simplex algorithm works on the principle that by swapping variables around, we can iterate through the intersections until the best possible solution is formed.
-* We want to maximise `z` where `z - maximising_equation = 0`.
+* We want to maximize `z` where `z - maximising_equation = 0`.
 * The steps are as follows:
 	1. Create the solution matrices where each equation contains all of the slack variables, setting their coefficients to 0 in equations where the slack variable isn't originally from:![[Pasted image 20230426145054.png]]
 	2.  Represent it as an augmented matrix:![[Pasted image 20230426145123.png]]
-	3. The `non-basic variable` to be chosen is the variable with the largest negative coefficient in the maximising vector, in this case $x_2$ with coefficient $-6$. This is now known as the `enterring variable` as it is entering the set of basic variables.
+	3. The `non-basic variable` to be chosen is the variable with the largest negative coefficient in the maximizing vector, in this case $x_2$ with coefficient $-6$. This is now known as the `enterring variable` as it is entering the set of basic variables.
 	4. The `basic variable` to be chosen is the variable that introduces the least slack when dividing it by the coefficient of the basic variable. In this case, it is $s_1$ as it has the slack of 11. (Using the coefficient of $x_2$ being 1). This is now known as the `leaving variable.` (The least non-negative value is chosen).
 	5. gaussian elimination now needs to be done on each of the rows where:
 		* The column of the `enterring variable` must become 0 through gaussian elimination except for the row with the `leaving variable`.

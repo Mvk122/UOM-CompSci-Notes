@@ -1,5 +1,5 @@
 # Simplex Algorithm When There is No Slack
-* No slack in the augmented matrix can materialise when there is a slack variable with the value 0.
+* No slack in the augmented matrix can materialize when there is a slack variable with the value 0.
 * This occurs when there exists 2 vertices, created through different constraints (eg a line passing straight through the origin) on the same point.
 * This can cause an infinite loop as the simplex algorithm picking the option with the least slack as the `basic variable` can lead to it picking alternating points in a loop.
 * This can be solved either by:
