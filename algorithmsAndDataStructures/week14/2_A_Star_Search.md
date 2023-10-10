@@ -7,6 +7,7 @@
 * For example, when considering journeys on a map, the heuristic could be the Euclidean distance from the node to the destination as no journey could be shorter than the straight line path from a node to the destination.
 
 ## Heuristic Admissibility Criteria
-* It must never overestimate the true cost of reaching a destination.
-* It must be monotone (fits the triangle inequality):
+* `Admissible`: It must never overestimate the true cost of reaching a destination.
+* `Monotonic`: It must be monotone (fits the triangle inequality):
 ![[Pasted image 20230422191848.png]]
+* `Informative`: The closer $h(x)$ is to the true distance of the goal, the more informative it is.
