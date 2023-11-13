@@ -17,5 +17,4 @@
 * Calculate the gradients of the lines making up the polygon.
 * Get the start and end points by iterating from the bottom of the polygon up, using the gradients to adjust the start and end point at each iteration.
 * Iterate between the start and end points, filling in the pixels.
-
-## 
+ 

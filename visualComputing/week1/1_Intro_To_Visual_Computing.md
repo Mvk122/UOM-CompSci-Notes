@@ -16,7 +16,7 @@
 
 ### Fixed Functionality
 *  The algorithms of the pipeline cannot be changed, they can only be used by passing varied parameters to them.
-* They're easy to use but are also older and depreceated.
+* They're easy to use but are also older and deprecated.
 
 ### Programmable
 * Some aspects of the pipeline can be modified by passing in code written in a `shading languge` eg (GLSL). This `shader` code is then run on the GPU as part of the pipeline.

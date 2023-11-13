@@ -23,6 +23,6 @@
 * If we want the best of both worlds (small holes with the same size object) we can use either #opening or #closing That is the combination of both
 	* Open(I) = dilate(erode(I))
 	* Close(I) = erode(dilate(I))
-* This also has tradeoffs as: 
+* This also has trade-offs as: 
 	* opening will remove sticking out bits but also enlarge holes.
 	* closing will fill in holes and fill out sticking out bits.

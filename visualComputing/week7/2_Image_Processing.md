@@ -11,7 +11,7 @@
 
 ## Input Output Mapping
 * A lookup table can be used to create an input output mapping for a custom brightness/contrast adjusting algorithm.
-* Furthermore, piecewise functions instead.
+* Furthermore, piecewise functions can be used instead of a lookup table.
 
 ### Min-Max Linear Stretch
 ![[Pasted image 20230321125456.png]]
@@ -37,4 +37,4 @@
 	* `Nearest Neighbour`: The blank pixels take the value of their nearest neighbour eg when scaling by 2, the 3 pixels created take the value of the 1 pixel in the top left. This creates blocky artefacts.
 	* `Linear`: Choosing a colour linearly between its neighbours.
 	* `Cubic`: Same as linear except using a cubic function.
-* For `rotation`, not all pixels in the source have a location in the destination due to non-integer rotations. Thus instead of cycling through source pixels, cycle through destination pixels to get their corresponding source pixel.
+* For `rotation`, not all pixels in the source have a location in the destination due to non-integer rotations. Thus instead of  cycling through source pixels, cycle through destination pixels to get their corresponding source pixel.

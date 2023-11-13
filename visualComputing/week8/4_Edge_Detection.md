@@ -18,7 +18,7 @@
 ## Prewitt Operator
 ![[Pasted image 20230601040526.png]]
 * More complex than roberts cross edge detector but it is more robust against noise.
-* This is because it separates into an averaging filter that smooths along the rows.
+* This is because it separates into an averaging filter that smooths along the rows. (the first matrix after the = is an average matrix)
 ![[Pasted image 20230601040746.png]]
 * Also creates thicker edges than the robert's operator.
 
@@ -45,4 +45,3 @@
 	6. For every strong edge, set all the weak edges that neighbour it to strong pixels as well.
 * In general, $T_H$ should be 3x higher than $T_L$.
 
-## Laplacian Edge Detection
