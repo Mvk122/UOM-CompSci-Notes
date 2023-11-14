@@ -20,4 +20,3 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 	* Have cosmetic delays to make waveform traces more readable.
 	* Sequence I/O in a test run.
 
- 
