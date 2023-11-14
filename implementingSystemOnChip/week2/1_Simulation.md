@@ -22,4 +22,6 @@
 	* A rough estimate can be made with annotations.
 * Can do things that are not easily made into actual hardware eg: 
 	* While statements. 
-	* The test environment can respond to the state of the device under test without building an explicit RTL 
+	* The test environment can respond to the state of the device under test without building an explicit RTL machine to do it and wiring up the appropriate connections etc. 
+
+
