@@ -18,4 +18,8 @@
 	* Which branches have not been taken. 
 	* Which nodes have not adopted both binary states at least once. (This is difficult with behavioural HDL as there are no nodes).
 * Not possible to gain complete timing models, however there is cycle accuracy.
-	* Though the timing model cannot be fu
+	* This is because functional tests typically use assumptions of synchronous behaviour and that circuit speed is greatly influenced by physical properties.
+	* A rough estimate can be made with annotations.
+* Can do things that are not easily made into actual hardware eg: 
+	* While statements. 
+	* The test environment can respond to the state of the device under test without building an explicit RTL 
