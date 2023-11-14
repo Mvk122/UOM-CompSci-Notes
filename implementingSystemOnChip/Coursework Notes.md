@@ -1,0 +1,1 @@
+* For files given by the lecturer, they will always have the `author` at the top of the file. If this file is being changed and resubmitted, change the name before submitting.
