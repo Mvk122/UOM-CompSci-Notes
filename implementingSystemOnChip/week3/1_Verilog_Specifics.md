@@ -15,3 +15,9 @@ wire #4 q; // There is a delay to any reassignment of q
 assign q = a & b; // q cuanges 4 time steps after a or b changes
 register <= #10 input_value; // There is a propogation delay when the input changes
 ```
+* Delays can be used to:
+	* model real components that have delays eg external memory reads.
+	* Have cosmetic delays to make waveform traces more readable.
+	* Sequence I/O in a test run.
+
+ 
