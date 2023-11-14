@@ -1,0 +1,17 @@
+# Stylistic Pitfall 
+```verilog
+always @ (posedge clk)
+	if (count < 9) count <= 1 + 1; else count <= 0;
+```
+* Due to the event driven architecture of verilog, non-blocking assignments occur after blocking assignments.
+* Hence if the input, (count) is changed in a blocking assignment elsewhere in the code, that change will happen prior to this `if` statement even if it's condition is also `always @ (posedge clk)`.
+
+# Delays
+* Delays can be caused using `#value`.
+* They cannot be synthesized and thus cannot be relied upon for functionality.
+```verilog
+#20 a = 11; // a is assigned to 11 after a delay of 20
+wire #4 q; // There is a delay to any reassignment of q
+assign q = a & b; // q cuanges 4 time steps after a or b changes
+register <= #10 input_value; // There is a propogation delay when the input changes
+```
