@@ -19,4 +19,14 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 	* model real components that have delays eg external memory reads.
 	* Have cosmetic delays to make waveform traces more readable.
 	* Sequence I/O in a test run.
+* Delays cannot be accurately simulated in hardware due to manufacturing discrepancies.
 
+## Initialisation
+* When a state-holding element in switched on, it will settle into a stable binary state.
+* It is not predictable what state this will be on an ASIC, so it is `unknown`.
+* Hence initialisation is required in some cases i.e in ARM: 
+	* R0-R14 start off as undefined.
+	* R15 (PC) is initialized to 0.
+* A rule of thumb is: 
+	* Control registers should be initialized.
+	* Data registers generally do not need to be initialized
