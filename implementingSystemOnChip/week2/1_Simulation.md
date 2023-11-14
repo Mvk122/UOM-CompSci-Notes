@@ -16,4 +16,6 @@
 * Can be assisted by test coverage tools that: 
 	* Checks which HDL statements have not been executed.
 	* Which branches have not been taken. 
-	* Which nodes have not adopted both binary states at least once. 
+	* Which nodes have not adopted both binary states at least once. (This is difficult with behavioural HDL as there are no nodes).
+* Not possible to gain complete timing models, however there is cycle accuracy.
+	* Though the timing model cannot be fu
