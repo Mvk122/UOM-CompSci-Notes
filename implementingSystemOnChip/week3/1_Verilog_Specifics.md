@@ -29,4 +29,10 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 	* R15 (PC) is initialized to 0.
 * A rule of thumb is: 
 	* Control registers should be initialized.
-	* Data registers generally do not need to be initialized
+	* Data registers generally do not need to be initialized.
+
+## Iffy Logic
+* In digital simulation, an if statement can have 3 logic results instead of 2, `{0, 1, (x,z)` (unknown).
+* To check for unknown, we can use different equality operators:
+	* `== and !=` may return `{0, 1, x}`
+	* `=== and !==` can only return `{0, 1}`
