@@ -18,4 +18,4 @@
 * `Individual tests`: Testing that at least one case of every known circumstance is used. 
 	* Effective but Expensive. 
 * `Algorithmically Generated`: All possible cases of inputs and regular input patterns, easy to do but requires some design effort. 
-* `Random Patterns (Monte Carlo)`: 
+* `Random Patterns (Monte Carlo)`: Gives high but incomplete coverage of common cases. However this can miss specific input combinations. Cheap to produce.
