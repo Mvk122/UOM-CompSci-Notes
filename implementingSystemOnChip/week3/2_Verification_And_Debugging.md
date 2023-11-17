@@ -13,3 +13,9 @@
 ### Data
 * Checking that the output data is correct by comparing it with independently generated test results.
 * Self-testing for processors may be possible by running software on it and seeing if it crashes.
+
+## Designing Verification Test Strategies
+* `Individual tests`: Testing that at least one case of every known circumstance is used. 
+	* Effective but Expensive. 
+* `Algorithmically Generated`: All possible cases of inputs and regular input patterns, easy to do but requires some design effort. 
+* `Random Patterns (Monte Carlo)`: 
