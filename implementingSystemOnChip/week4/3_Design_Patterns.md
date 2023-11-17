@@ -19,7 +19,16 @@
 ## Parallelism Techniques
 ### Pipelining
 * Subdivides the logic.
-* Allows for an increase in clock speed as the computati
+* Allows for an increase in clock speed as the computation is done in parallel by different pieces of hardware hence less operations are required from each hardware module. (Increased throughput)
+* Can increase latency.
+* Has a small area overhead.
+* Depending on the design, can either save or use more power: 
+	* Saves power by reducing logic switching by preventing glitch propagation.
+	* Can increase power as `clock loading` is increased. (Getting the clock cycle to the components).
+* Can simplify the design process by decomposing into sensible blocks.
+
+
+
 * Pre-evaluating some of the logic in an earlier stage.
 * Using a more parallel logic expression (different algorithm).
 
