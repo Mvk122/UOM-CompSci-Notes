@@ -27,8 +27,11 @@
 	* Can increase power as `clock loading` is increased. (Getting the clock cycle to the components).
 * Can simplify the design process by decomposing into sensible blocks.
 
+### Data Parallelism
+* `SIMD`: Single instruction multiple data, can process more smaller data elements simultaneously.
+* `Interleaving`: In instructions that require multiple clock-cycles where the data flows through different components, interleaving can be used such that later instructions can be executed while waiting for the computation of a previous result.
 
-
+### Other
 * Pre-evaluating some of the logic in an earlier stage.
 * Using a more parallel logic expression (different algorithm).
 
