@@ -1,0 +1,1 @@
+* I've designed a cloud-native trading system that prioritises 
