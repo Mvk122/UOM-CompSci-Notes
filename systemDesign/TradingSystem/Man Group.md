@@ -7,4 +7,6 @@
 * It all starts with the inputs to the system, market data, news or any other form of input coming as streams to our kafka producers.
 * In Kafka, we can discard market data that is malformed from using UDP as opposed to TCP as well as filtering out any other invalid data.
 * Furthermore, since all input data has to pass through kafka and given that we can easily scale kafka horizontally, it also makes sense compute aggregate data like the Relative Strength Index in the kafka layer to reduce latency.
-* 
+* These kafka streams of cleaned and aggregated market data are then consumed by :
+	* the arcticDB database, which stores the realtime market data and aggregates 
+	* the compute modules that 
