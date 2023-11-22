@@ -11,4 +11,7 @@
 
 ## To Research
 * Long Short Term Memory
-* 
+
+## To Do
+* Clone the intel neuromorphic challenge code and read through it. 
+* Sign up for phase 2 of the competition.
