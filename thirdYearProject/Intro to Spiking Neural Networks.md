@@ -8,9 +8,9 @@
 * Be extremely parallel 
 * Target low power, real time dynamic applications.
 
-
 ## To Research
 * Long Short Term Memory
+* Building a neural network from scratch [3Blue1Brown Series](https://www.youtube.com/watch?v=aircAruvnKk)
 
 ## To Do
 * Clone the intel neuromorphic challenge code and read through it. 
