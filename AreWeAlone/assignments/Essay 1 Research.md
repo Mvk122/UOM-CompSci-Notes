@@ -13,4 +13,4 @@ Site Chosen: Mars
 		* Volcanic processes contribute to the creation of diverse mineralogical landscapes. The presence of various minerals can impact the chemical composition of the soil and rocks on Mars. Certain minerals could serve as potential habitats or provide nutrients that could support microbial life.
 * Presence of organic molecules on Mars https://www.nhm.ac.uk/discover/news/2023/august/organic-molecules-martian-crater-help-reconstruct-planets-history.html
 	* They are to be analyzed by the Mars Sample Return Mission
-	* 
+
