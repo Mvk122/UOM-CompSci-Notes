@@ -8,7 +8,6 @@
 * Use spikes instead of constant streams as data transfer is more energy intensive than compute.
 * Be extremely parallel 
 * Target low power, real time dynamic applications.
-
 ## To Research
 * Long Short Term Memory
 * Building a neural network from scratch [3Blue1Brown Series](https://www.youtube.com/watch?v=aircAruvnKk)
