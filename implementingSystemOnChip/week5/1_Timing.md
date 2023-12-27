@@ -34,3 +34,13 @@ endmodule
 
 ## Clock Distribution
 ![[Pasted image 20231227165833.png]]
+* A H-Tree is used to distribute the clock signal, ensuring that each component in the chip is connected at the same "level" of the tree to minimise clock skew.
+	* `Clock skew`: The difference in arrival time of the clock signal from one part of the processor to another.
+* Generally the high fan-out requires amplification/ buffering.
+
+## Timing Closure
+![[Pasted image 20231227174131.png]]
+* Fitting all the logic into the desired clock period.
+* Can be assisted by `static timing analysis` tools which deduce the logic paths by finding the registers and estimating the signal delays through all paths.
+* The output is the slowest path which is the limiting factor in the circuit.
+
