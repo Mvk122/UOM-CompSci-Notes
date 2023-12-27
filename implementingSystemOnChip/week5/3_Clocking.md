@@ -28,4 +28,16 @@
 ![[synchroniser.png]]
 * Synchronisers allow for signals to be sent between clock domains.
 * The first flip flop latches a valid level which the second copies one period later.
-* If the first flip flop is metastable, it has a 
+* If the first flip flop is metastable, it has an entire clock period to stabilise for the second flip flop.
+* If it does not stabilise within the clock period, it will be forced to a digital state on the next clock edge. However, the second flip flop can still be metastable if it was resolving at the wrong moment.
+* The ever-present chance of failure from the synchroniser is always present, however designers can reduce the odds of failure by chaining more flip flops.
+
+## Crossing Clock Domains
+* When crossing a clock domain, there is always some latency and a chance of failure due to metastability.
+* There are many ways to reduce latency and increase throughput however:
+![[Pasted image 20231227223657.png]]
+* Synchronising Every Item
+	* High latency, low bandwidth.
+* Buffering packets of items.
+	* Longer latency, high bandwidth.
+* 
