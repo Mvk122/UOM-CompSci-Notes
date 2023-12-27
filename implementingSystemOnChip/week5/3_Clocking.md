@@ -1,3 +1,6 @@
+## Definitions
+* `Metastability`: Flip flops can be a 1, 0 or metastable aka in between. This can come as a result of violating set up/ hold conditions. In principle a flip flop can remain metastable forever but if it starts to resolve one way, positive feedback pushes it further in that direction.
+
 ## Clock Distribution
 ![[Pasted image 20231227165833.png]]
 * A H-Tree is used to distribute the clock signal, ensuring that each component in the chip is connected at the same "level" of the tree to minimise clock skew.
@@ -16,4 +19,13 @@
 * The output is the slowest path which is the limiting factor in the circuit. Finding this critical path can be hard to achieve through simulation, however as it is not guaranteed that the critical path is simulated.
 
 ## Clock Domains
-* It is not possible to always have a single clock
+* It is not possible to always have a single clock as:
+	* Synchronous clock distribution can be increasingly difficult.
+	* Blocks may work optimally at different frequencies as they may be IP from different vendors.
+	* Some I/O may require different frequencies.
+
+## Synchronisers
+![[synchroniser.png]]
+* Synchronisers allow for signals to be sent between clock domains.
+* The first flip flop latches a valid level which the second copies one period later.
+* If the first flip flop is metastable, it has a 
