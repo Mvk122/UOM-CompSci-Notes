@@ -9,4 +9,4 @@
 ### Disadvantages
 * Keeping everything synchronous can be challenging.
 * Keeping within the clock period is an additional constraint.
-* Crossing clock domains
+* Crossing clock domains needs to be accounted for.
