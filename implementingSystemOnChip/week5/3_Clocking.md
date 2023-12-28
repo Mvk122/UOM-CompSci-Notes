@@ -38,6 +38,6 @@
 ![[Pasted image 20231227223657.png]]
 * Synchronising Every Item
 	* High latency, low bandwidth.
-* Buffering packets of items.
+* Buffering packets of items in RAM before synchronising them all at once.
 	* Longer latency, high bandwidth.
 * 
