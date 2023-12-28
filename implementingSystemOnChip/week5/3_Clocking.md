@@ -40,6 +40,7 @@
 	* High latency, low bandwidth.
 * Buffering packets of items in RAM before synchronising them all at once.
 	* Longer latency, high bandwidth.
+	* This can be improved with double buffering wherein when one bucket is full, it can be synchronised and emptied while the other buffer is being filled up. This requires more hardware but further increases throughput.
 * In a decoupling FIFO queue, the latency of the stream of items can be partially hidden by the latency of the first item.
 	* The FIFO accepts items from the transmitter at the transmitter's frequency and is read out from the receiver at its respective clock.
 	* When the buffer is partially full, the speed of the queue is limited by the slower of the 2 clocks.
@@ -47,5 +48,5 @@
 
 ## Decoupling FIFO Implementation 
 * The transmitter writes to successive locations and the receiver subsequently reads from them at its own rate.
-* On every write, increment the synchronised counter and on every read, decrement the synchronised counter.
-* Even though the control counter needs to be synchronised, if there are multiple locations for data, i.e data has been written to 4 locations, once the first read is synchronised, the other 3 do not need to be synchronised when reading concurrently.
+* There are 2 counters, `Tx clock` for write and `Rx clock` for read which signify where the read and write pointers are. They are incremented and decremented on each read and write respectively.
+* Even though the control counter needs to be synchronised, if there are multiple locations for data, i.e data has been written to 4 locations, once the first read is synchronised, the other 3 do not need to be synchronised when reading as we know the write head is not writing to those locations.
