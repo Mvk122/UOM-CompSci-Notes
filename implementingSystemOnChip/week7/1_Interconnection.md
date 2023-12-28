@@ -10,4 +10,4 @@
 	* The Chip Selection is asserted low.
 	* A valid address is placed on the `address bus`. This is followed by the `read` signal going low.
 	* The read signal remains low until read data's `data_in` is valid.
-	* A
+* *
