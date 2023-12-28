@@ -40,4 +40,7 @@
 	* High latency, low bandwidth.
 * Buffering packets of items in RAM before synchronising them all at once.
 	* Longer latency, high bandwidth.
-* 
+* In a FIFO queue, the latency of the stream of items can be partially hidden by the latency of the first item.
+	* The FIFO accepts items from the transmitter at the transmitter's frequency and is read out from the receiver at its respective clock.
+	* When the buffer is partially full, the speed of the queue is limited by the slower of the 2 clocks.
+* FIFO + Buffering, high throughput from the buffering and low latency from the FIFO queue.
