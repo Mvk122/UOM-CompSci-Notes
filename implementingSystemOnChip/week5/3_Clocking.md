@@ -40,7 +40,12 @@
 	* High latency, low bandwidth.
 * Buffering packets of items in RAM before synchronising them all at once.
 	* Longer latency, high bandwidth.
-* In a FIFO queue, the latency of the stream of items can be partially hidden by the latency of the first item.
+* In a decoupling FIFO queue, the latency of the stream of items can be partially hidden by the latency of the first item.
 	* The FIFO accepts items from the transmitter at the transmitter's frequency and is read out from the receiver at its respective clock.
 	* When the buffer is partially full, the speed of the queue is limited by the slower of the 2 clocks.
 * FIFO + Buffering, high throughput from the buffering and low latency from the FIFO queue.
+
+## Decoupling FIFO Implementation 
+* The transmitter writes to successive locations and the receiver subsequently reads from them at its own rate.
+* On every write, increment the synchronised counter and on every read, decrement the synchronised counter.
+* Even though the control counter needs to be synchronised, if there are multiple locations for data, i.e data has been written to 4 locations, once the first read is synchronised, the other 3 do not need to be synchronised when reading concurrently.
