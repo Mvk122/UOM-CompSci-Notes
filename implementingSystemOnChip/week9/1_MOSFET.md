@@ -12,3 +12,5 @@
 
 ## MOSFET Structure
 ![[Pasted image 20240101203155.png]]
+
+
