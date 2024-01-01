@@ -21,4 +21,5 @@
 ![[Pasted image 20240101184535.png]]
 * When valid and ready are asserted, a transfer takes place. This has a much lower latency than a handshake mechanism.
 * Since packets can get stuck on some phases (i.e a wait signal), there is a challenge on when to assert ready: 
-	* Option 1: Assert ready only when the block is empty and ready to receive data. This option is too slow as it requires the ready signal to be propogated through the pipe
+	* Option 1: Assert ready only when the block is empty and ready to receive data. This option is too slow as it requires the ready signal to be propagated through the pipe, thus slowing the throughput in half. 
+	* Option 2: Be prepared to receive data even if a current packet could not be passed on. This retains the full speed but requires an additional latch for the additional data.
