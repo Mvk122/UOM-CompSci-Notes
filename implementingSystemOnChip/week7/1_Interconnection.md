@@ -13,4 +13,6 @@
 * This is used in ARM-FPGA interfaces and Framestore SRAM.
 * Alternatively, a bidirectional bus can also be used which uses a Clock Enable signal and a direction signal.
 
-## When to use Bidirectional vs One direction
+## When to use Bidirectional vs Unidirectional
+* Off chip interfaces use bidirectional due to pin restriction and wiring on the PCB.
+* On chip busses use unidirectional to allow for many electrical buffers to be inserted along the wire to keep switching speeds reasonably rapid.
