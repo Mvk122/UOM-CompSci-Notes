@@ -10,6 +10,8 @@
 ### Inverter
 ![Inverter](../img/inverter.png)
 * The inverter is made with a `pMOS` and `nMOS` in `parallel`. 
+* When the input is 0, `pMOS` is turned on and connects the output to VDD and sets the output to 1.
+* When the input is 1, `nMOS` connects the output to ground and sets the output to 0.
 
 
 ### Series and parallel transistor combinations
