@@ -14,9 +14,14 @@
 	* This wasted silicon costs a lot of money.
 ### Complications
 * Since many boards may have numerous peripheral devices on board, not all of which are used concurrently, to save on pad size, these functions can be multiplexed onto the same pads, reducing the pad count.
-	* This also allows for the chip to be less specific to 
-
+	* This also allows for the chip to be less specific to certain functions, so fewer devices have to be built and tested.
 ## Flip Chips
-
+* An alternative to pad rings wherein the pads are `micro-bumps` on the top of the passivation of the circuit and the chip is mounted upside-down in the package.
+### Advantages
+* Less wiring distance is needed from the chip to the bumps as opposed to wiring to the pad ring.
+* More contacts can be made than just around the edge.
+* Less noise as the wires are shorter. This is most important in long thin wires.
 ## Mixed Simulations
 ![[Pasted image 20240107190609.png]]
+* It is infeasible to simulate a whole SoC in one run, hence different levels of simulation are done for different blocks.
+* 
