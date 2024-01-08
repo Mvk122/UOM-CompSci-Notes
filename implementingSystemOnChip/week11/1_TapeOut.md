@@ -24,4 +24,15 @@
 ## Mixed Simulations
 ![[Pasted image 20240107190609.png]]
 * It is infeasible to simulate a whole SoC in one run, hence different levels of simulation are done for different blocks.
-* 
+## SPICE
+* A circuit activity simulator that solves differential equations to give an accurate model on the behaviour of a circuit when it is fabricated.
+* It takes in:
+	* The netlist.
+	* An input stimulus file.
+	* Detailed models of the component's characteristics.
+* SPICE simulations take a lot of time hence they are generally used on smaller circuits/ smaller portions of circuits to `characterise` and produce simplified standard cells, specifying:
+	* Propagation delays.
+	* Output edge speeds. 
+* The standard cells are then used in larger analogue simulations.
+
+## Place And Route
