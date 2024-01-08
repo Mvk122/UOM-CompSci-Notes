@@ -36,3 +36,19 @@
 * The standard cells are then used in larger analogue simulations.
 
 ## Place And Route
+* Placement is the act of mapping cells onto the surface of the silicon so they are as close as possible but not overlapping. 
+* There are constraints on the placement of cells:
+	* Cells that are connected together should be placed adjacently.
+	* They cannot be too close and have 100% utilisation as:
+		* Space needs to be kept for routeing.
+		* Space must be kept for later modifications such as buffer insertion.
+* Wires from routeing have the following properties:
+	* They cannot overlap. (They need to use multiple layers)
+	* The preference is to use lower layers only to minimise parasitic load capacitance.
+
+## Buffer Insertion 
+* When a network is routed, it may be discovered to have excessive capacitance, resulting in slower edges. This is especially common on long data busses. 
+* Hence electrical amplifiers have to be placed at certain intervals. This requires space close to the wiring and is why P&R cannot have 100% utilisation.
+* Pros of buffer insertion:
+	* They save time by speeding up edges.
+	* They improve electrical integrity by making the circuit less susceptible to noise.
