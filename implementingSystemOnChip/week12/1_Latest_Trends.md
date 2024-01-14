@@ -18,3 +18,9 @@
 	* The gap between a 0 and a 1 is reduced at lower voltages, reducing the noise margins available so radiation can produce upsets more easily.
 
 # Variability
+![[Pasted image 20240114175431.png]]
+* Diffusing atoms act statistically, hence with a larger amount of atoms, there is a strong likelihood that the actual number will be close to the mean. 
+* With smaller numbers, the variations are proportionally larger hence components are less reliable and require more redundancy.
+
+# Three Dimensional Structures
+![[Pasted image 20240114175805.png]]
