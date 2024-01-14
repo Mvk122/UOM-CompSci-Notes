@@ -10,7 +10,9 @@
 	* Testing needs to be done through multiple layers of logic hence there is a loss in `controllability` as compared to testing in software. This can also mean that more cycles are needed to test something.
 	*  The outputs need to be checked for incorrectness and this can be hard as there can be blocks of logic in between the output and feedback to the user, hence there is a loss in `observability` as compared to testing in software.
 ## Built In Self Test
-
+* A chip being able to test itself through the generation of test patterns using a ROM or a psuedo-random number generator.
+* The output signature can be collected as an output `cyclic redundancy checks`.
+* 
 
 ## Scan Chains
 * Wires connected to buried logic blocks to achieve controllability and observability
