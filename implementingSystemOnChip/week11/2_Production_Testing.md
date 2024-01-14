@@ -46,4 +46,8 @@
 ## Boundary Scans
 ![[Pasted image 20240114171538.png]]
 * Like a scan chain but only at the input and output of a significant block in the SOC.
-* 
+
+## Test Interfaces 
+![[Pasted image 20240114172627.png]]
+* Since many SOCs are bus based, a test interface controller can create a boundary scan across multiple devices that are connected to the bus.
+* This also allows for the tester to access any slave devices on the bus.
