@@ -24,3 +24,7 @@
 
 # Three Dimensional Structures
 ![[Pasted image 20240114175805.png]]
+* Current chips may have 10+ layers of metal interconnect however the logic is still 2D on the silicon surface. 
+* Making a true 3d chip is extremely challenging due to: 
+	* Power density.
+	* Chip interconnection wire length.
