@@ -27,4 +27,23 @@
 	* They are connected to the previous flip flop in the scan chain. 
 	* They are connected to a global input which decides if their input should be from their combinatorial logic or from the previous scan flip flop.
 * Hence the scan chain is essentially a massive shift register.
+### Testing Scan Chains
+1. Stop the clock 
+2. Switch to scan
+3. Repeat for the length of the scan chain:
+	1. Apply data bit to scan-in
+	2. Clock
+4. Switch to operate
+5. Clock once 
+6. Switch to scan
+7. Repeat for the length of the scan chain:
+	1. Read data bit from scan out 
+	2. Clock
+
+### Scan Chain Optimisations 
+* While reading the data bits out from the scan chain, read the data bits in for the next operation. 
+* Apply multiple patterns to the combinatorial circuitry directly to test all blocks in parallel. 
 ## Boundary Scans
+![[Pasted image 20240114171538.png]]
+* Like a scan chain but only at the input and output of a significant block in the SOC.
+* 
