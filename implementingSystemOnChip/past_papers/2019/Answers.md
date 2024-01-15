@@ -90,4 +90,9 @@ no idea
 * Buffer insertion after the P&R stage.
 
 # 2f
-* If power efficiency is the goal, then 
+* If power efficiency is the goal, then more of the transistors should be high threshold as it reduces the power loss from short circuit.
+* The design can be reviewed to see where changes can be made to use high T instead of low T.
+	* Can be done by reducing the clock speed.
+
+
+# 3a
