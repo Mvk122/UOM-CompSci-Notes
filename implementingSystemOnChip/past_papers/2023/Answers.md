@@ -79,4 +79,8 @@ The value means don't care hence the synthesizer can implement the logic with le
 
 ## 3c
 * Power-gating to ensure that power is only sent to the domain-1 when it is needed, preventing excessive current from being used in leakage.
-* 
+* Has less static dissipation to reduce power further and voltage below it will allow pMos to conduct, allowing VDD-1 to be provided to domain 1
+* They have a higher leakage current hence even when power gated, there would still be a small amount of current leaking from the nmos transistor.
+* To allow slower circuits to use less power and to allow for the power to be turned off in domains that are not currently required. 
+* Level shifters
+
