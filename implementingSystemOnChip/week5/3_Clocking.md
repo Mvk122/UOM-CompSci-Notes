@@ -27,6 +27,7 @@
 ## Synchronisers
 ![[synchroniser.png]]
 * Synchronisers allow for signals to be sent between clock domains.
+	* They significantly reduce the chance that data from the sender might change at the same time it is being sampled by the receiver, causing metastability.
 * The first flip flop latches a valid level which the second copies one period later.
 * If the first flip flop is metastable, it has an entire clock period to stabilise for the second flip flop.
 * If it does not stabilise within the clock period, it will be forced to a digital state on the next clock edge. However, the second flip flop can still be metastable if it was resolving at the wrong moment.
