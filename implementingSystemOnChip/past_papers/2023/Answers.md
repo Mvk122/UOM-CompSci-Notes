@@ -23,4 +23,24 @@ The value means don't care hence the synthesizer can implement the logic with le
 * Cannot detect: 
 	* Whether or not it does what the designer intended, not what the designer implemented.
 	* Timing issues
-* 
+
+## 1f
+* Faster switching, allowing for a faster clock speed.
+* Higher power usage from short circuit (dynamic) switching.
+
+## 1g
+* Less switching per unit time, hence:
+	* a lower amount of power lost from short circuit.
+	* A lower amount of power lost from switching.
+* More time is spent hence more static power loss from leakage as the processor takes more time.
+
+## 1h
+* Small amount of current that flows even when it should be in the off state due to physical imperfections.
+
+## 1i
+* This allows for less wiring to be used as opposed to parallel
+	* USB 
+	* Ethernet
+
+## 1j
+* Buffer insertion 
