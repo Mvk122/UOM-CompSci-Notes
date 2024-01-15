@@ -26,4 +26,49 @@
 
 # 1f
 * The short circuit power dissipation wherein during switching, both pmos and nmos are conducting hence current goes from VDD to ground.
-* Current required from resistance when switching.
+* Current required from resistance when switching. 
+* The most important is the voltage which switching resistance is impacted by the square of. This is because it has the largest impact.
+
+# 1g
+* More manufacturing processes and expensive machinery are needed as chips have become smaller. 
+* There is more variability in these smaller components. 
+* It is hard to make optics for light to focus them more than they already are.
+
+# 1h
+* Tests to ensure that current features aren't broken/ removed while new changes to the code/design are being made.
+
+# 1i 
+* Synchronous
+```verilog
+module synchronous (
+	input wire d,
+	input wire clk,
+	input wire read_enable,
+	input wire reset,
+	output reg q
+);
+	always @ (posedge clk) begin
+	if (reset) q <= 0;
+	else if (read_enable) q <= d;
+	end
+
+endmodule
+
+module synchronous (
+	input wire d,
+	input wire clk,
+	input wire read_enable,
+	input wire reset,
+	output reg q
+);
+	always @ (posedge clk, posedge reset) begin
+	if (reset) q <= 0;
+	else if (read_enable) q <= d;
+	end
+
+endmodule
+```
+
+# 1j
+* It is sometimes better for components of a chip such as RAM to be implemented/ manufactured through a different process not using standard gates to be then copied and pasted as necessary as part of the design.
+
