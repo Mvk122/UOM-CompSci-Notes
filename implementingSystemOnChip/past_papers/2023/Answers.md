@@ -71,3 +71,7 @@ The value means don't care hence the synthesizer can implement the logic with le
 
 # 3a
 
+
+## 3b
+* Transmission gate
+* 

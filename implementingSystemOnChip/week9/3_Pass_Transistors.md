@@ -1,6 +1,8 @@
 ![[Pasted image 20240101224350.png]]
 * Are not directly connected to a power supply.
 * Are used to pass through signals based on the input, like a switch.
+
+![[Pasted image 20240115074204.png]]
 * However since pMOS is bad at transmitting 0 and nMOS the opposite, they are usually combined into a `transmission gate` which is a digital switch.
 	* This transmission gate can also be used as a multiplexer.
 
