@@ -34,4 +34,5 @@ TODO
 
 # 3b
 * Using a series of flip flops in series to latch valid values.
-* If there is a harmonic relationship between the clocks, we can use 
+* If there is a harmonic relationship between the clocks, we can know with certainty when both clocks will have a clock edge hence a synchroniser will not be required.
+* Using a mutual exclusin 

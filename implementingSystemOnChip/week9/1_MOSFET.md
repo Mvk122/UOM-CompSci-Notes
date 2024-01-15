@@ -12,5 +12,5 @@
 
 ## MOSFET Structure
 ![[Pasted image 20240101203155.png]]
-
-
+* The length is the smaller dimension and will be typically as small as can be manufactured. It can be made longer to weaken the structure.
+* The width can be increased to increase the amount of drive strength.
