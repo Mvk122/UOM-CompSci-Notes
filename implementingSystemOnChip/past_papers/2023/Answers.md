@@ -62,3 +62,12 @@ The value means don't care hence the synthesizer can implement the logic with le
 ## 2d
 * When clocking across domains that are isochronous or have the same frequency but are offset at a known offset.
 
+## 2e
+* This can be done by buffering packets in RAM before synchronising them all at once.
+* The throughput can further be increased by using double buffering wherein while one bucket is being filled up, the other is being synchronized.
+
+## 2f
+* 4 bytes * 240MHz = 960MB/s
+
+# 3a
+
