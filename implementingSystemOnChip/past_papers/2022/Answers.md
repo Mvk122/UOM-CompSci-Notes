@@ -74,3 +74,16 @@
 * Easier to divide down than multiply up and the clock frequency can be divided by 2 with each ripple counter.
 
 # 3a
+* MOSFET transistors with a lower threshold voltage are better as they have faster switching speeds.
+* A drawback is that there would be higher power consumption from short circuits taking more time. 
+
+# 3b
+TODO
+
+# 3c
+* If it only has one internal buffer, ready in is set high, if valid in is also set high, then the data is transmitted. 
+* This could be faster using double buffering as we would not need to read ready out before sending the data.
+
+# 3d
+* The throughput of busses is too low and there are too many devices communicating with one another, hence network on chips are preferred (low scalability)
+* Hence network on chips are better, and modifications to AXI can be used like double buffering.
