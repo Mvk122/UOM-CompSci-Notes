@@ -10,5 +10,8 @@
 	* To sequence I/O in a test run.
 
 # 1c
-XX = ZZ 
-YY = ZZ 
+XX = 12
+YY = 12
+WW = 12
+
+# 1d
