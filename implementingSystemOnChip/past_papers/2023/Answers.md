@@ -43,4 +43,22 @@ The value means don't care hence the synthesizer can implement the logic with le
 	* Ethernet
 
 ## 1j
-* Buffer insertion 
+* Buffer insertion is used when there is excess capacitance, leading to slower edges, hence it is used to speed up edges, leading to:
+	* Faster circuitry
+	* Making the circuit less susceptible to noise.
+* It is done in the floorplanning phase after place and route.
+
+## 2a
+* IP blocks that require a specific clock speed that is separate from the rest of the system on chip.
+* I/O may require specific frequencies.
+* Distributing a synchronous clock over a large SOC can be overly difficult.
+
+## 2b
+* When using a chain of latches for a synchroniser, it is possible for a latch to read the value of the previous latch while it is metastable, this means that there will always be the risk that all latches in the chain read during the previous latch's metastable state.
+
+## 2c
+* By using a chain of many latches for synchronization, the chances that every latch was reading the previous latch in its metastable state is extremely low.
+
+## 2d
+* When clocking across domains that are isochronous or have the same frequency but are offset at a known offset.
+
