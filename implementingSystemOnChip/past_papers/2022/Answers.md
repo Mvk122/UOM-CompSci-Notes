@@ -50,4 +50,27 @@
 * All stages of the pipeline take up the same amount of time.
 
 # 2d 
-* A process known as time stealing can be used wherein a delay is added to the 
+* A process known as time stealing can be used wherein: 
+	* The clock speed is sped up to its required amount.
+	* The additional time can be `stolen` from its neighbour that reads from the register by adding a delay to the output register of the memory macrocell. 
+	* Since the neighbour uses less time than the faster clock period, there is no timing violation in the circuit.
+
+# 2e
+* First design advantages:
+	* Synchronous design that is easier to reason about as it only has 1 clock.\
+	* Since the register is only enabled w
+* First design disadvantages: 
+	* More wiring is needed
+* Second design advantages:
+	* Fewer wiring is needed
+	* Uses less power as the clock signal does not need to be distributed to the register.
+* Second design disadvantages:
+	* Uses multiple clocks and is hard to reason about especially when creating the timing constraint. 
+* I would use the first design as:
+	* FPGA's already implement the enable register in hardware, making it faster and more power efficient. 
+	* The design is easier to reason about. 
+
+# 2f
+* Easier to divide down than multiply up and the clock frequency can be divided by 2 with each ripple counter.
+
+# 3a
