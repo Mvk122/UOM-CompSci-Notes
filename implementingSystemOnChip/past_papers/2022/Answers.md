@@ -9,4 +9,14 @@
 4. ddd becomes input_2
 
 ## 1c
-* Power gating is when a pMOS (or less commonly nMOS) transistor is us
+* Power gating is when a pMOS (or less commonly nMOS) transistor is used to send power to a component only when it is needed, reducing overall power consumption.=
+* When the microcontroller needs to be used, there will be latency starting it up as needed.
+
+## 1d
+* 200Mbytes per second.
+
+# 1e
+* It means don't care, so the synthesizer can optimise the logic further.
+* It means unknown value, suggesting an error condition.
+
+# 1f
