@@ -34,7 +34,7 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 ## Iffy Logic
 * In digital simulation, an if statement can have 3 logic results instead of 2, `{0, 1, (x,z)` (unknown).
 * `X`: Unknown or don't care.
-* `Z`: High impedance, to indicate that a wire
+* `Z`: High impedance, to indicate that a wire is not being driven by any component. This can be seen in busses where multiple components are connected to a wire but only one at a given time.
 * To check for unknown, we can use different equality operators:
 	* `== and !=` may return `{0, 1, x}`
 	* `=== and !==` can only return `{0, 1}`
