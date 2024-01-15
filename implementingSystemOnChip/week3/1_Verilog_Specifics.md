@@ -21,7 +21,7 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 	* Sequence I/O in a test run.
 * Delays cannot be accurately simulated in hardware due to manufacturing discrepancies.
 
-## Initialisation
+## Initialization
 * When a state-holding element in switched on, it will settle into a stable binary state.
 * It is not predictable what state this will be on an ASIC, so it is `unknown`.
 * Hence initialisation is required in some cases i.e in ARM: 
@@ -33,6 +33,8 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 
 ## Iffy Logic
 * In digital simulation, an if statement can have 3 logic results instead of 2, `{0, 1, (x,z)` (unknown).
+* `X`: Unknown or don't care.
+* `Z`: High impedance, to indicate that a wire
 * To check for unknown, we can use different equality operators:
 	* `== and !=` may return `{0, 1, x}`
 	* `=== and !==` can only return `{0, 1}`
