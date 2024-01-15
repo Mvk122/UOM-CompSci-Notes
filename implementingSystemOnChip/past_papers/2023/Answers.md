@@ -17,4 +17,10 @@ The value means don't care hence the synthesizer can implement the logic with le
 * Disadvantage: May not cover all input cases and paths.
 
 ## 1e
+* Can detect: 
+	* Whether or not all possible code paths have been taken.
+	* Whether or not the output matches with the golden data
+* Cannot detect: 
+	* Whether or not it does what the designer intended, not what the designer implemented.
+	* Timing issues
 * 
