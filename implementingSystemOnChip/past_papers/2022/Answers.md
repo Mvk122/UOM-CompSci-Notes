@@ -20,3 +20,12 @@
 * It means unknown value, suggesting an error condition.
 
 # 1f
+* Greater drive strength through higher transconductance.
+* Better to carry high voltages
+
+# 1g
+* Buffer insertion, which is used to speed up transitions when there is a high conductance from long wires, it is used to speed up edges, making the device faster and reduce the impact of noise.
+
+# 1h
+* Verification is used to check that the design works as the designer intended, testing is used to check that the manufactured product is not defective in its outputs.
+* When testing, it tries to have as much coverage of the logical units as possible to ensure all the manufactu
