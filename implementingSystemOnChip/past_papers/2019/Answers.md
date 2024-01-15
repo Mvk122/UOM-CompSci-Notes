@@ -72,3 +72,22 @@ endmodule
 # 1j
 * It is sometimes better for components of a chip such as RAM to be implemented/ manufactured through a different process not using standard gates to be then copied and pasted as necessary as part of the design.
 
+# 2a
+TODO
+
+# 2b
+* The wider a transistor, the higher impedance and drive it has.
+
+# 2c 
+no idea 
+
+# 2d
+* The capacitance of the wire will be large hence the edges will be slower thus:
+	* The device will operate slower as it takes longer for a 0 to settle to a 1.
+	* Noise has a bigger impact.
+
+# 2e
+* Buffer insertion after the P&R stage.
+
+# 2f
+* If power efficiency is the goal, then 
