@@ -74,4 +74,9 @@ The value means don't care hence the synthesizer can implement the logic with le
 
 ## 3b
 * Transmission gate
+* Can be switched on and off using the control signal
+* Does not suffer from the voltage level shifting problem
+
+## 3c
+* Power-gating to ensure that power is only sent to the domain-1 when it is needed, preventing excessive current from being used in leakage.
 * 
