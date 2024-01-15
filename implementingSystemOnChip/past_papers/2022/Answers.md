@@ -28,4 +28,26 @@
 
 # 1h
 * Verification is used to check that the design works as the designer intended, testing is used to check that the manufactured product is not defective in its outputs.
-* When testing, it tries to have as much coverage of the logical units as possible to ensure all the manufactu
+* When testing, it tries to have as much coverage of the logical units as possible to ensure all the manufactured units work.
+
+# 1i
+* The voltage at which pMOS or nMOS starts conducting.
+* The voltage at which a digital signal is considered a 1 or a 0.
+
+# 1j
+* There are no control signals for burst sizes etc.
+* It is useful for slow, less complicated peripheral devices.
+
+# 2a
+* Leads to a simplification in the design process as we can assume that latches/ registers set in the current clock cycle are set at the next clock cycle. 
+* Allows for FSMs where a snapshot of the current state and inputs can be used to derive the next state.
+* Timing is quantized
+
+## 2b 
+* The timing difference between the arrival of a clock signal at different parts of the circuit.
+
+# 2c
+* All stages of the pipeline take up the same amount of time.
+
+# 2d 
+* A process known as time stealing can be used wherein a delay is added to the 

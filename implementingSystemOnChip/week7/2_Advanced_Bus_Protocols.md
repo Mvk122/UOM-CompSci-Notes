@@ -12,6 +12,7 @@
 	* The read or write data is placed on their respective busses.
 ## APB Complexity
 * Since everything occurs in 2 clock cycles, there is a round trip every bus cycle and thus there needs to be enough time for this to occur. 
+* 
 ## APB Extensions
 * There are extensions to the spec such as: 
 	* A wait state for peripherals to note that they are not yet ready.
