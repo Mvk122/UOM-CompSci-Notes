@@ -42,4 +42,12 @@ $$
 $$
 P(t) = G_1B_1B_2^{-1}B_2T_1(t)
 $$
-* 
+* Now, allow for $G_1B_1B_2^{-1}$ to be the new $Geometry$ and $B_2$ Becomes the new basis.
+* Thus the basis is now the b-spline basis and we have the new control points (Geometry) for representing the originally bezier curve as a b-spline.
+
+# Non-Uniform Rational Basis Spline
+![[Pasted image 20240116172911.png]]
+* Each control point has a weight that it contributes to the curve.
+* The curve is defined by the ratio of the cubic terms.
+* They are more flexible than b-spline and bezier curves, hence are used more in computer design than the latter.
+* (No need to know how to derive them).
