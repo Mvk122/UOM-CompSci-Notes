@@ -17,3 +17,29 @@
 * The tangent at the connection are exactly the same
 ## C2
 * The tangent and also the derivative of the tangent are exactly the same at the connection
+
+# B-Spline Curves
+![[Pasted image 20240116171801.png]]
+* Cubic.
+* Uses 4 control points.
+* Are locally cubic (each segment of the curve is cubic).
+* They are not constrained to passing through any of the control points.
+* Is bounded by a convex hull, like bezier curves.
+* The sum of its bernstein polynomials is always 1.
+![[Pasted image 20240116171935.png]]
+* Equation of a b-spline curve.
+
+# Converting Between Bezier and B-Spline Curves
+* Consider how a Curve is represented:
+$$
+P = Geometry * Spline Basis * Power Basis 
+$$
+* Allow $B_1$ to be the basis for bezier and $B_2$ to be the basis for B-Spline. 
+$$
+P(t) = G_1B_1T_1(t)
+$$
+* We can multiply by $B_2^{-1}B_2$ and it won't make a change as that is the unity matrix.
+$$
+P(t) = G_1B_1B_2^{-1}B_2T_1(t)
+$$
+* 
