@@ -25,4 +25,4 @@
 ![[Pasted image 20240116170304.png]]
 * It can also be represented in a matrix form.
 ![[Pasted image 20240116170631.png]]
-* The bernstein function coefficients can be found for any polyn
+* The bernstein function coefficients can be found for any polynomial of degree n with the above formula.
