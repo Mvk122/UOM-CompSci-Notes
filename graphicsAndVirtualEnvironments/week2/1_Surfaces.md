@@ -6,5 +6,6 @@
 
 # Surfaces with Bicubic Bernstein Functions
 ![[Pasted image 20240117032715.png]]
-* `u` is the coordinate of the control point like when defining lines.
-* `v` is the position of the 
+![[Pasted image 20240117041941.png]]
+
+# Types of Curv
