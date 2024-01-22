@@ -26,3 +26,12 @@
 * Run a simulation on the expanded nodes by doing random self play.
 ## Back Up
 * The statistics of the added node and its ancestors are backed up.
+
+# Comparison of MCTS to TD-Learning
+## TD Learning
+* Needs to learn in self play before being used as a game playing agent. 
+* Learns board value function or Q-table 
+## MCTSS
+* Learns while playing the game. 
+* Uses exploration exploitation to find best nodes. 
+* Uses random play to evaluate nodes.
