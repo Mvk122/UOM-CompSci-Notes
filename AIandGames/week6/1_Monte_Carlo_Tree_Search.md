@@ -14,7 +14,12 @@
 * Thus the estimated value of the node is $Q(v)/N(v)$.
 ![[Pasted image 20240122084438.png]]
 * The second part of the equation is the exploration constant.
-* $
+* $N(v)$ is the parent and $N(v')$ is the node itself.
+### Selecting a Move
+* `Max Child`: Choose the child with the highest value of  $Q(v)/N(v)$.
+* `Robust Child`: Choose the child most often visited.
+* `Max Robust Child`: Choose the child which is maximal in both rewards and visits. It may not exist though.
+* `Secure Child`: ![[Pasted image 20240122085508.png]]
 ## Expansion 
 * Increase the size of the partial tree by expanding nodes (usually just 1 node). 
 ## Play Out 
