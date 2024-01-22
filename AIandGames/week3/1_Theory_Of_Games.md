@@ -7,3 +7,13 @@
 ## Best Response
 * It is always possible to find a best response if there is a finite strategy space.
 * If the strategy space is infinite then it may not always be possible.
+
+# Finding Nash Equilibriums
+![[Pasted image 20240122033856.png]]
+* Consider 2 players, a maximizing player (Amelia) and a minimizing player (Scott)
+* For each strategy that Amelia can play, get the minimum value for them and out of those strategies, choose the row with the max of these minimums.
+* For each strategy that Scott can play, get the maximum that he can get and choose the column with the minimum of these maximums.
+* Any intersections where the max of the min and the min of the max are the same (in this case `3`) are the strategies with the `nash equilibrium`.
+
+# Dominating Strategy
+* A strategy $s_i$  dominates $s_j$ 
