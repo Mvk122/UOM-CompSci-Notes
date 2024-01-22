@@ -17,4 +17,6 @@
 * Perform actions that have worked well in the past.
 
 # epsilon-greedy policy
-* Balances the exploration exploitation tradeoff by using the best move with probability $
+* Balances the exploration exploitation tradeoff by using the best move with probability $e$ and a random move with probability $1-e$.
+* Decrease $e$ with $O(1/t)$ to reward exploitation more as the game goes on.
+
