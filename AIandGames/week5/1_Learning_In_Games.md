@@ -19,4 +19,9 @@
 # epsilon-greedy policy
 * Balances the exploration exploitation tradeoff by using the best move with probability $e$ and a random move with probability $1-e$.
 * Decrease $e$ with $O(1/t)$ to reward exploitation more as the game goes on.
+* Should be used when the environment is not changing, a constant should be used instead if the environment is always changing.
 
+# Tabular Reinforcement Learning Approach
+![[Pasted image 20240122064607.png]]
+* $r_t$ is the reward from doing a play.
+* $a$ is a small positive learning rate (can use epsilon greedy policy).
