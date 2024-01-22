@@ -25,3 +25,8 @@
 ![[Pasted image 20240122064607.png]]
 * $r_t$ is the reward from doing a play.
 * $a$ is a small positive learning rate (can use epsilon greedy policy).
+
+# Q Function Approximation 
+![[Pasted image 20240122065900.png]]
+* In many real world scenarios, the state and action spaces are too large to judge the rewards for every given state and action explicitly. 
+* Hence Q-Function approximation can be used to estimate the rewards for a given state and input.
