@@ -2,7 +2,7 @@
 * [Video on Introduction to SNNs](https://www.youtube.com/watch?v=PeW-TN3P1hk)
 * [(Nengo) Tool for building SNNs, creating inputs and golden data](https://www.nengo.ai/)
 * [Leaky Integratand Fire Neuron Model Tutorial](https://compneuro.neuromatch.io/tutorials/W2D3_BiologicalNeuronModels/student/W2D3_Tutorial1.html)
-
+https://www.youtube.com/watch?v=1YnyNAxaJIg
 ## Avenues for Optimising SNNs
 * Don't have a global clock, use asynchronous communication (event listeners).
 * Use spikes instead of constant streams as data transfer is more energy intensive than compute.
