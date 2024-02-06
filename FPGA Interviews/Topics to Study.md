@@ -11,5 +11,8 @@
 * Crossing Clock Domains
 * Sync and Async logic
 * Defending against Side-Channel attacks
+
+## Questions
+https://www.reddit.com/r/FPGA/comments/ckbm58/thrashed_in_an_interview_fpga_design_engineer/
 * How do FPGAs work? Specifically how does one get from HDL to an architecture implemented on FPGA itself?
-* 
+* Different FPGA architectures
