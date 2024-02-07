@@ -5,6 +5,12 @@
 	* Architectural approaches to increasing processor speeds have been exhausted.
 * Hence increasing the number of transistors has come with using multiple cores.
 
+## Challenges with Increasing Single Core Performance
+* Using extra transistors to increase single core performance can be done in multiple ways:
+	* [[4_Instruction_Level_Parallelism]] Which has diminishing returns beyond 4 pipelines.
+	* Larger caches, but their benefits are reduced past a certain size.
+* Both these ways of increasing single core performance were exhausted by the mid 2000s.
+
 ## Challenges with Multicore Processors
 * It is hard to program multicore processors as we need to decide:
 	* How are processors connected.
