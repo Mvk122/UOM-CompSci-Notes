@@ -11,6 +11,7 @@
 * Crossing Clock Domains
 * Sync and Async logic
 * Defending against Side-Channel attacks
+* Why did I score a half mark on that question in the test
 
 ## Questions
 https://www.reddit.com/r/FPGA/comments/ckbm58/thrashed_in_an_interview_fpga_design_engineer/
