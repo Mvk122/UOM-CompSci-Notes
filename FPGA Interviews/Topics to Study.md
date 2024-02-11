@@ -26,6 +26,10 @@
 * Functions vs tasks
 * Mealy and moore designs
 * Sync vs async designs
+
+## Things to Build
+* FIFO
+* Multiplier like in [[5_binary_multipliers]]
 ## Links to Study
 * https://www.youtube.com/watch?v=4YRsq8iM4n0
 ## Questions

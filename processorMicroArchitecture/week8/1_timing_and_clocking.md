@@ -10,7 +10,7 @@
 ## Clock Period
 * The `minimum clock period (maximum frequency)` is hard to estimate when the layout is not complete.
 * However, it is important to know it in the design phase as it is important to know how many clock cycles each block of combinatorial logic takes to ensure the simulations are accurate.
-* At the gate level, the clock period is set roughly b the gate depth between registers.
+* At the gate level, the clock period is set roughly by the gate depth between registers.
 * Thus the `minimum allowed clock period` is determined as the sum of: 
     * The propogation delay of the source register.
     * Propogation delay of the logic. 
@@ -41,7 +41,7 @@
 * This can be achieved with:
     * The same clock signal with shifted phase.
     * Multiples/ divisions of a main clock
-    * Independant clocks.
+    * Independent clocks.
 * The designs need to be partitioned for the different `clock domains` as setup and hold time violations can arise if the boundary is broken.
 * However, a `synchroniser` can be used to resolve the `metastability`.
 
