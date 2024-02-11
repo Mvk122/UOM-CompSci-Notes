@@ -7,6 +7,7 @@
 	* Select is set to high.
 	* The address is placed on the address bus.
 	* Read or write is set.
+	* The above signals are set by the bus master
 * In the second cycle:
 	* The enable goes high.
 	* The read or write data is placed on their respective busses.
