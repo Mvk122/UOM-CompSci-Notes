@@ -20,6 +20,8 @@ register <= #10 input_value; // There is a propogation delay when the input chan
 	* Have cosmetic delays to make waveform traces more readable.
 	* Sequence I/O in a test run.
 * Delays cannot be accurately simulated in hardware due to manufacturing discrepancies.
+> Not part of the content:
+* Delays can, however be created using shift registers to delay data by a certain number of clock cycles https://nandland.com/lesson-10-tutorial-shift-registers/
 
 ## Initialization
 * When a state-holding element in switched on, it will settle into a stable binary state.
