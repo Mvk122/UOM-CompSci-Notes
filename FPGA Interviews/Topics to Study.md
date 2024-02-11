@@ -31,6 +31,7 @@
 ## Things to Build
 - [ ] FIFO
 - [ ] Multiplier like in [[5_binary_multipliers]]
+- [ ] Linear feedback shift register
 ## Links to Study
 - [ ] https://www.youtube.com/watch?v=4YRsq8iM4n0
 ## Questions
