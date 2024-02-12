@@ -13,7 +13,7 @@
 
 # Lookup Table Implementation in Verilog
 ```verilog
-module lut2(input a[1:0], output reg y) 
+module lut2(input a[1:0], output reg y); 
 
 reg [3:0] lut_mask;
 

@@ -36,7 +36,7 @@
 ## Links to Study
 - [ ] https://www.youtube.com/watch?v=4YRsq8iM4n0
 - [x] https://www.allaboutcircuits.com/technical-articles/purpose-and-internal-functionality-of-fpga-look-up-tables/
-- [ ] https://www.youtube.com/watch?v=9U9R4IxIACs Interview Questions
+- [ ] https://www.youtube.com/watch?v=9U9R4IxIACs Interview Questions and Answers
 ## Questions
 https://www.reddit.com/r/FPGA/comments/ckbm58/thrashed_in_an_interview_fpga_design_engineer/
 * How do FPGAs work? Specifically how does one get from HDL to an architecture implemented on FPGA itself?
