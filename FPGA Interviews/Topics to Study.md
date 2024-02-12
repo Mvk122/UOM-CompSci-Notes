@@ -16,6 +16,7 @@
 - [ ] LUT Trees
 - [x] Bit encodings
 - [x] For loops in verilog
+- [ ] Review the OA and all the answers
 
 ## Re-Study Following Modules
 - [x] Processor Microarchitecture
