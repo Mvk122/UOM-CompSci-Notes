@@ -11,13 +11,12 @@ module onehot_to_binary (
 always @(posedge clk) begin
 	if (reset == 1) begin
 		output_data <= 0;
-end else begin
-for (int i = 0; i < 31; i++) begin
-if (input_data[i] == 1) begin
-output_data <= i;
-end
-end
-end
-end
+	end else begin
+
+	for (int i = 0; i < 31; i++) begin
+		if (input_data[i] == 1) begin
+		output_data <= i;
+		end
+	end
 endmodule
 ```
