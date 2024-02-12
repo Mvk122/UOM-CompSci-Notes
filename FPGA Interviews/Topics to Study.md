@@ -17,7 +17,7 @@
 ## Re-Study Following Modules
 - [x] Processor Microarchitecture
 - [ ]  System Architecture
-- [ ] Implementing SOC
+- [x] Implementing SOC
 - [ ] Operating Systems
 
 ## Verilog Constructs
