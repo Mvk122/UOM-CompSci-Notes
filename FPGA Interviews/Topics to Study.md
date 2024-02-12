@@ -41,6 +41,7 @@
 - [ ] https://www.youtube.com/watch?v=9U9R4IxIACs Interview Questions and Answers
 - [ ] https://hdlbits.01xz.net/wiki/Problem_sets
 - [ ] https://nandland.com/fpga-101/
+- [ ] https://www.reddit.com/r/FPGA/comments/ehsqgb/interview_advice_for_a_new_grad_fpga_engineer/
 ## Questions
 https://www.reddit.com/r/FPGA/comments/ckbm58/thrashed_in_an_interview_fpga_design_engineer/
 * How do FPGAs work? Specifically how does one get from HDL to an architecture implemented on FPGA itself?
