@@ -11,4 +11,8 @@
 ![[Pasted image 20240212162256.png]]
 * Crossing from a fast to a slow clock domain can lead to pulses being too fast for the slow clock to capture them.
 * To prevent this, stretching can be used where the signal is stretched to ensure that the slow clock can capture it. 
-* The minimum amount of clock cycles to stretch it to should be `fast_clock/`
+* The minimum amount of clock cycles to stretch it to should be `2 * fast_clock/slow_clock`.
+
+# Streaming Data Between Clock Domains
+* The above methods are useful for intermittent signals however when streaming data, a FIFO using block RAM should be used instead. 
+* This is described in [[3_Clocking]]

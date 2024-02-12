@@ -9,7 +9,7 @@
 	- [ ] brick sort
 - [ ] Routers
 - [ ] FIFOs
-- [ ] Crossing Clock Domains
+- [x] Crossing Clock Domains
 - [ ] Sync and Async logic
 - [ ] Defending against Side-Channel attacks
 - [x] Why did I score a half mark on that question in the test
