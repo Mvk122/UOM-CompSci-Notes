@@ -14,8 +14,8 @@
 - [ ] Defending against Side-Channel attacks
 - [x] Why did I score a half mark on that question in the test
 - [ ] LUT Trees
-- [ ] Bit encodings
-- [ ] For loops in verilog
+- [x] Bit encodings
+- [x] For loops in verilog
 
 ## Re-Study Following Modules
 - [x] Processor Microarchitecture

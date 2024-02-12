@@ -5,17 +5,19 @@
 module onehot_to_binary (
 	input clock,
 	input logic [31:0] input_data,
-	output logic [3:0] output_data
+	input logic reset,
+	output logic [4:0] output_data
 );
 
-always @(posedge clk) begin
+always @(posedge clock) begin
 	if (reset == 1) begin
 		output_data <= 0;
 	end else begin
 
-	for (int i = 0; i < 31; i++) begin
+	for (int i = 0; i < 32; i++) begin
 		if (input_data[i] == 1) begin
 		output_data <= i;
+		break
 		end
 	end
 endmodule
