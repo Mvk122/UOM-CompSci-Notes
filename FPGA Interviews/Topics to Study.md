@@ -1,4 +1,4 @@
-- [ ] How to implement a multiplexer in FPGA. 
+- [x] How to implement a multiplexer in FPGA. 
 	* Talk about LUTs
 	* Verilog Code
 	* Timing Implications
@@ -14,6 +14,8 @@
 - [ ] Defending against Side-Channel attacks
 - [ ] Why did I score a half mark on that question in the test
 - [ ] LUT Trees
+- [ ] Bit encodings
+- [ ] For loops in verilog
 
 ## Re-Study Following Modules
 - [x] Processor Microarchitecture
