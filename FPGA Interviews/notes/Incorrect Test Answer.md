@@ -28,6 +28,8 @@ reg int precomputed;
 
 always @ (posedge clk) begin
 	precomputed <= B + C;
+	current_a <= A;
+	new_a <= current_a
 end
 
 always @ (posedge clk) begin
