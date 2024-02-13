@@ -17,7 +17,8 @@
 - [x] Bit encodings
 - [x] For loops in verilog
 - [ ] Review the OA and all the answers
-- [ ] Look at his 
+- [ ] Look at his MSc Research Paper
+- [x] Flip Flop vs Latch
 
 ## Re-Study Following Modules
 - [x] Processor Microarchitecture
