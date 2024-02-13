@@ -4,7 +4,7 @@
 module latch(wire enable, wire [31:0] in, reg [31:0] out);
 
 always @ (*) begin
-	if (enable) out <= in;
+	if (enable) out = in;
 end
 
 endmodule
