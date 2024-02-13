@@ -1,0 +1,2 @@
+* `Mealy Design`: Determines the next state based on current state and current inputs, hence can be considered to be an `asynchronous` design.
+* `Moore Design`: Determines the next state only based on the current state, hence can be considered a `synchronous` design.

@@ -2,13 +2,13 @@
 	* Talk about LUTs
 	* Verilog Code
 	* Timing Implications
-- [ ] Network protocol stack (TCP, UDP, Ethernet)
+- [x] Network protocol stack (TCP, UDP, Ethernet)
 - [x] What is the Internal Structure of an FPGA
 - [ ] FPGA Networking (AXI, AHB, APB, PCIE)
 - [ ] Hardware Sorting Algorithms
 	- [ ] brick sort
 - [ ] Routers
-- [ ] FIFOs
+- [x] FIFOs
 - [x] Crossing Clock Domains
 - [ ] Sync and Async logic
 - [ ] Defending against Side-Channel attacks
@@ -17,7 +17,7 @@
 - [x] Bit encodings
 - [x] For loops in verilog
 - [ ] Review the OA and all the answers
-- [ ] Look at his MSc Research Paper
+- [x] Look at his MSc Research Paper
 - [x] Flip Flop vs Latch
 
 ## Re-Study Following Modules
@@ -31,7 +31,7 @@
 	* Blocking vs non blocking 
 	* How latches are formed and how to avoid them
 - [ ] Functions vs tasks
-- [ ] Mealy and moore designs
+- [x] Mealy and moore designs
 - [ ] Sync vs async designs
 
 ## Things to Build
