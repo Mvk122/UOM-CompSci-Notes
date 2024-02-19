@@ -1,5 +1,6 @@
 # Terminology
 * `Lava`: Software for developing neural networks in software https://github.com/lava-nc/lava
+	* Pip needs to install `lava-nc` and `lava-dl`
 
 # Lava_Inference.ipynb
 * Jupyter notebook for encoding, denoising and decoding using the default neural network solution.
