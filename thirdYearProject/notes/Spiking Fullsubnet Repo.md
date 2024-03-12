@@ -3,7 +3,7 @@
 
 ## Running Inference
 ```bash
-cd /root/code/spiking-fullsubnet
+cd /root/code/spiking-fullsubnet/recipes/intel_ndns/spike_fsb
 
 conda activate spiking-fullsubnet
 
