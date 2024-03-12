@@ -15,3 +15,8 @@ python run.py -C baseline_s.toml -M test --ckpt_path /root/code/spiking-fullsubn
 ```toml
 norm_type = "offline_laplace_norm"
 ```
+
+## How Inference Works
+* Gets the trainer path from `baseline_s.toml`, yielding `trainer.Trainer`.
+* Passes the test_dataloader to `trainer.test`.
+* 
