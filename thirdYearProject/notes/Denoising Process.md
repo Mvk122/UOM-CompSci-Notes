@@ -17,7 +17,7 @@
 * A fourier transform transforms a time/amplitude domain to a frequency/amount domain, which shows the number of signals at each frequency-range.
 * The problem with the discrete fourier transformation is that we lose all of the time information which is important when analysing the changes in frequencies over time.
 * A short term fourier transformation applies a fourier transformation over each `frame` of the audio.
-* This generates a 2D vector, where we get a vector for the amount of signals in each frequency bin for each frame of the audio.
+* This generates a 2D vector, where we get a vector for the magnitude and phase shift (represented as a complex number) of each frequency bin for each frame of the audio.
 
 ## Hann Window and Spectral Leakage![[Pasted image 20240329172054.png]]
 * Signals are rarely an integer number of periods hence the ends of the signal are discontinuous.
@@ -28,7 +28,7 @@
 ![[Pasted image 20240329173034.png]]
 * Hence when creating the frames, we overlap them slightly to their adjacent frames.
 # 1: Encoding with Short Term Fourier Transformation
-* Encoding via STFT is used to extract `audio features` in`frames` from the audio.
+* Encoding via STFT is used to extract the magnitude and phase of each frequency bin over all `frames` from the audio. (2D Vector)
 	* This is used instead of the raw audio as noise and signals often occupy different signal bands, hence transforming the audio to the frequency domain makes it easier to separate audio from noise and train a model on it.
 * During the short term fourier transformation, we use the `hann window` function to prevent spectral leakage. 
 	* `win_length` is set to `512` and `hop_length` is set to `128`, hence each frame is `512` samples wide and has `384` samples of overlap with its adjacent frames.
@@ -40,3 +40,5 @@ complex_stft = torch.stft(audio, n_fft, hop_length, win_length, return_complex=T
 * We don't care about the phase shifts, hence use `torch.abs` to get the absolute value, leaving only the `magnitude`.
 * The `magnitude` is then normalised using `offline laplace norm`.
 * The resulting normalised magnitudes of the STFT are passed to the neural network.
+
+# 2: Fullband Model
