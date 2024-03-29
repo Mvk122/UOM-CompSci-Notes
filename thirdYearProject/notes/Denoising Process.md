@@ -20,6 +20,11 @@
 * The problem with the discrete fourier transformation is that we lose all of the time information which is important when analysing the changes in frequencies over time.
 * A short term fourier transformation applies a fourier transformation over each `frame` of the audio.
 * This generates a 2D vector, where we get a vector for the amount of signals in each frequency bin for each frame of the audio.
+
+## Hann Window and Spectral Leakage![[Pasted image 20240329172054.png]]
+* Signals are rarely an integer number of periods hence the ends of the signal are discontinuous.
+* This appears as high frequency components that aren't present in the original signal when a fourier transformation is applied.
+* Hence this issue can be solved by applying a `hann window function` on the frame which eliminates the samples at the ends of the frame, leading to a periodic signal.
 # 1: Encoding with Short Term Fourier Transformation
 * Encoding via STFT is used to extract `audio features` in`frames` from the audio.
 	* Essentially creates a 2D image which is easier to 
