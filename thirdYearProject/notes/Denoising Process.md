@@ -41,4 +41,9 @@ complex_stft = torch.stft(audio, n_fft, hop_length, win_length, return_complex=T
 * The `magnitude` is then normalised using `offline laplace norm`.
 * The resulting normalised magnitudes of the STFT are passed to the neural network.
 
+## References 
+[Why does FFT give complex numbers](https://stackoverflow.com/questions/10304532/why-does-fft-produce-complex-numbers-instead-of-real-numbers)
+[Short Term Fourier Transformation Explanation](https://www.youtube.com/watch?v=-Yxj3yfvY-4&t=1s)
+[Extracting Features with STFT, Feature explanation, Hann Window](https://www.youtube.com/watch?v=8A-W1xk7qs8&list=PL-wATfeyAMNqIee7cH3q1bh4QJFAaeNv0&index=7)
+
 # 2: Fullband Model
