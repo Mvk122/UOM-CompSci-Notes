@@ -25,11 +25,16 @@
 * Signals are rarely an integer number of periods hence the ends of the signal are discontinuous.
 * This appears as high frequency components that aren't present in the original signal when a fourier transformation is applied.
 * Hence this issue can be solved by applying a `hann window function` on the frame which eliminates the samples at the ends of the frame, leading to a periodic signal.
+![[Pasted image 20240329172949.png]]
+* However, due to the flat signal at the end of each frame, when we connect all the frames together, we have lost a lot of the signal.
+![[Pasted image 20240329173034.png]]
+* Hence when creating the frames, we overlap them slightly to their adjacent frames.
 # 1: Encoding with Short Term Fourier Transformation
 * Encoding via STFT is used to extract `audio features` in`frames` from the audio.
-	* Essentially creates a 2D image which is easier to 
+	* This is used instead of the raw audio as noise and signals often occupy different signal bands, hence transforming the audio to the frequency domain makes it easier to separate audio from noise and train a model on it.
 * The output used is the magnitude of the short term fourier transformation.
 * During the short term fourier transformation, we use the `hann window` function to prevent spectral leakage. 
+	* `win_length` is set to `512` and `hop_length` is set to `128`, hence each frame is `512` samples wide and has `384` samples of overlap with its adjacent frames.
 ```python
 # line 42 of src/preprocess.py
 complex_stft = torch.stft(audio, n_fft, hop_length, win_length, return_complex=True, window=torch.hann_window(n_fft))
