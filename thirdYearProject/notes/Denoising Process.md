@@ -32,10 +32,13 @@
 # 1: Encoding with Short Term Fourier Transformation
 * Encoding via STFT is used to extract `audio features` in`frames` from the audio.
 	* This is used instead of the raw audio as noise and signals often occupy different signal bands, hence transforming the audio to the frequency domain makes it easier to separate audio from noise and train a model on it.
-* The output used is the magnitude of the short term fourier transformation.
 * During the short term fourier transformation, we use the `hann window` function to prevent spectral leakage. 
 	* `win_length` is set to `512` and `hop_length` is set to `128`, hence each frame is `512` samples wide and has `384` samples of overlap with its adjacent frames.
 ```python
 # line 42 of src/preprocess.py
 complex_stft = torch.stft(audio, n_fft, hop_length, win_length, return_complex=True, window=torch.hann_window(n_fft))
 ```
+* The output of the short term fourier transform is a 2D vector of complex numbers, they are complex to represent the amplitude of the signals composing the wave as well as the phase shift of the sin waves.
+* We don't care about the phase shifts, hence use `torch.abs` to get the absolute value, leaving only the `magnitude`.
+* The `magnitude` is then normalised using `offline laplace norm`.
+* The resulting normalised magnitudes of the STFT are passed to the neural network.
