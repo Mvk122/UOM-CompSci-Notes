@@ -4,8 +4,6 @@
 3. Encoding the SNN output back into audio
 
 # Definitions
-## Audio Features
-
 ## Sample
 * A measurement of the amplitude of the audio signal at a specific point in time.
 ## Frame
