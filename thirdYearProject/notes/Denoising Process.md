@@ -47,4 +47,4 @@ complex_stft = torch.stft(audio, n_fft, hop_length, win_length, return_complex=T
 [Extracting Features with STFT, Feature explanation, Hann Window](https://www.youtube.com/watch?v=8A-W1xk7qs8&list=PL-wATfeyAMNqIee7cH3q1bh4QJFAaeNv0&index=7)
 
 # 2: Fullband Model
-* 2 gating spiking neuron layers stored in rnn_layers, iterate over them. output of first layer is used for second layer
+* 2 gating spiking neuron layers stored in rnn_layers, iterate over them. output of first layer is used for second layer. default state is state which is the empty hx, cx memory states
