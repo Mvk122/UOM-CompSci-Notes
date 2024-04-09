@@ -46,5 +46,9 @@ complex_stft = torch.stft(audio, n_fft, hop_length, win_length, return_complex=T
 [Short Term Fourier Transformation Explanation](https://www.youtube.com/watch?v=-Yxj3yfvY-4&t=1s)
 [Extracting Features with STFT, Feature explanation, Hann Window](https://www.youtube.com/watch?v=8A-W1xk7qs8&list=PL-wATfeyAMNqIee7cH3q1bh4QJFAaeNv0&index=7)
 
+
+# 2: Pretext
+* Weights for the neural network in both the fullband model are loaded in `audiozen/trainer/base_trainer_gan_accelerate_ddp_validate.py` in the `test` function on line `393`. 
+* Since so many things are loaded in this instance, just get the weights that are relevant from `recipes/intel_ndns/spike_fsb/efficient_spiking_neuron.py` line 150 and line 151 by dumping into a text file.
 # 2: Fullband Model
 * 2 gating spiking neuron layers stored in rnn_layers, iterate over them. output of first layer is used at the input for the second layer. default state is state which is the empty hx, cx memory states
